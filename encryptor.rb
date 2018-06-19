@@ -19,7 +19,6 @@ class Encryptor
 
   def encrypt(string)
     encrypted_word = []
-    #1. split the word
     words = string.split
     words.each do |word|
       letter = word.split("")
@@ -29,7 +28,6 @@ class Encryptor
       encrypted_word << word
 
     end
-    # words = []
     encrypted_word.map do |a|
       a.join
     end.join(" ")
